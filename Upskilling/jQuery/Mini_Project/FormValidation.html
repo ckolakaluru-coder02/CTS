@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+<h2>Registration Form</h2>
+
+<input type="text" id="name" placeholder="Enter Name">
+
+<button id="submit">
+Submit
+</button>
+
+<p id="message"></p>
+
+<script>
+
+$("#submit").click(function(){
+
+if($("#name").val()=="")
+{
+$("#message").text("Name Required");
+}
+else
+{
+$("#message").text("Form Submitted");
+}
+
+});
+
+</script>
+
+</body>
+
+</html>
